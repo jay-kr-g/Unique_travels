@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Unique Travels</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header id="header">
+  <div class="header-logo">
+    <img src="images/logo.png" alt="" height="50px">
+  </div>
+
+  <nav id="header-nav-wrap">
+    <ul class="header-main-nav">
+      <li><a href="#home" class="smoothscroll">Home</a></li>
+      <li><a href="#about" class="smoothscroll">About Us</a></li>
+      <li><a href="#" class="smoothscroll">Contact Us</a></li>
+      <li><a href="#" class="smoothscroll">Service</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-menu-toggle" id="menu-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+</header>
+<section id="home" style="padding-top: 150px;">
+  <div class="overlay"></div>
+  <div class="home-content">
+    <div class="home-left">
+      <h1 class="top" class="fade-up">Welcome to Unique Travels</h1>
+      <h1 class="h1 fade-up">Seamless travel, Trusted rides, Easy Travel.</h1>
+      <br>
+      <div class="buttons fade-up">
+        <a href="#book" class="button stroke">Book Now</a>
+      </div>
+    </div>
+    <div class="home-right fade-up">
+      <img src="images/phone.png" alt="App Mockup">
+    </div>
+    <div class="social-sidebar">
+  <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+  <div class="scroll-toggle" id="scroll-toggle">
+  <span id="scroll-text">SCROLL DOWN</span>
+  <i id="scroll-icon" class="fa fa-arrow-down"></i>
+</div>
+</div>
+
+  </div>
+
+</section>
+
+
+<section class="about">
+  <h1>ABOUT</h1>
+  <p class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quas et fugiat quasi voluptatem! Aperiam eum aliquid quos libero asperiores.</p>
+  <br><br>
+  <p class="line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident error perspiciatis laborum doloribus aliquam voluptatem corporis eaque commodi voluptate.</p>
+</section>
+
+
+
+
+
+<section class="booking-section" id="book">
+  <div class="booking-container">
+    
+    <!-- Left Car Image -->
+    <div class="booking-image line">
+      <img src="images/form-cAr.png" alt="Car Image">
+    </div>
+
+    <!-- Right Form -->
+    <div class="booking-form">
+      <h2>BOOK YOUR CAR</h2>
+      <form id="bookingForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="contact" placeholder="Contact Number" required>
+        <input type="text" id="pickup" placeholder="Pick-up Location" required>
+        <input type="text" id="drop" placeholder="Drop Location" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<script src="index.js"></script>
+</body>
+</html>

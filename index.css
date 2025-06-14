@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+header {
+  position: fixed;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.top{
+  color:rgb(180, 180, 180); margin-top: 100px;
+}
+@media (max-width:768px) {
+  .top{
+    margin-top: 0px;
+  }
+  
+}
+.header-logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#header-nav-wrap {
+  display: flex;
+  align-items: center;
+}
+.header-main-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.header-main-nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.button.cta {
+  background: #39b54a;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.header-menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Home Section */
+#home {
+  background: url('images/car.png') center center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.home-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 10;
+}
+.home-left {
+  flex: 1;
+  padding: 1rem;
+}
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-right img {
+  max-width: 100%;
+  height: auto;
+}
+.buttons {
+  margin-top: 1.5rem;
+}
+.button.stroke {
+  background: or;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 40px;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.home-social-list {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.home-social-list li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.home-scrolldown {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.home-scrolldown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.h1{
+  font-size: 50px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .header-main-nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+  .header-main-nav.active {
+    display: flex;
+  }
+  .header-menu-toggle {
+    display: block;
+  }
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-left, .home-right {
+    width: 100%;
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* social-icons and scroll */
+  .social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  border-radius: 10px 0 0 10px;
+}
+
+.social-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-sidebar ul li {
+  margin: 10px 0;
+}
+
+.social-sidebar ul li a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-sidebar ul li a:hover {
+  color: #1abc9c;
+}
+
+.scroll-toggle {
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.scroll-toggle i {
+  transform: rotate(180deg);
+  font-size: 14px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+
+ /* about */
+ .about{
+  background-color: #DDEEED;
+  height: 300px;
+ }
+ .about h1{
+  text-align: center;
+ }
+ .about h1:hover{
+  text-decoration: underline;
+ }
+ @media(max-width:768px){
+  .about{
+    padding-top: 50%;
+  }
+ }
+
+/* form */
+    .booking-section {
+  padding: 40px 20px;
+}
+
+.booking-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.booking-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.booking-form {
+  flex: 1 1 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+}
+
+.booking-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.booking-form form input,
+.booking-form form button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.booking-form form button {
+  background-color: #ff5d12;
+  color: black;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.booking-form form button:hover {
+  background-color: #ac3a20;
+}
+
+@media (max-width: 768px) {
+  .booking-container {
+    flex-direction: column;
+  }
+
+  .booking-image img {
+    max-width: 100%;
+  }
+}
+
+@keyframes appear {
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  t0{
+    opacity: 1;
+    scale: 1;
+  }
+}
+.line{
+  animation: appear linear;
+  animation-timeline:view();
+  animation-range: entry 0% cover 40%
+}
