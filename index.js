@@ -92,3 +92,17 @@ window.addEventListener('scroll', () => {
 
   window.open(url, '_blank');
 });
+
+const observes = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  document.querySelectorAll('.whyuniquetravels .why').forEach(el => {
+    observes.observe(el);
+  });
