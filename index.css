@@ -81,7 +81,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
 }
 .home-content {
   position: relative;
@@ -441,13 +441,13 @@ footer{
       z-index: 1;
     }
 
-    .overlay {
+    .overlays{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.726);
+      background-color: rgba(0, 0, 0, 0.519);
       z-index: 2;
     }
 
@@ -593,6 +593,8 @@ footer{
   font-size: 1.2em;
   white-space: nowrap;
   position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .scrolling-track {
@@ -614,6 +616,11 @@ footer{
     transform: translateX(-100%);
   }
 }
+/* @media(max-width:768px){
+  .scrolling-words{
+    margin-top: 0;
+  }
+} */
 
 .scrolling-word {
   overflow: hidden;
@@ -624,6 +631,8 @@ footer{
   white-space: nowrap;
   position: relative;
   display: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .scrolling-track-right {
